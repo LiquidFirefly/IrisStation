@@ -59,10 +59,6 @@
 	w_class = ITEMSIZE_NORMAL
 	slot = ACCESSORY_SLOT_OVER
 
-	sprite_sheets = list(
-		"Teshari" = 'icons/mob/species/seromi/suit.dmi'
-		)
-
 /obj/item/clothing/accessory/poncho/green
 	name = "green poncho"
 	desc = "A simple, comfortable cloak without sleeves. This one is green."

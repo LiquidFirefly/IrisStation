@@ -10,7 +10,6 @@
 		"Tajara" 				= 'icons/mob/species/tajaran/helmet.dmi',
 		"Skrell" 				= 'icons/mob/species/skrell/helmet.dmi',
 		"Unathi" 				= 'icons/mob/species/unathi/helmet.dmi',
-		"Teshari"				= 'icons/mob/species/seromi/head.dmi',
 		"Nevrean" 				= 'icons/mob/species/nevrean/helmet_vr.dmi',
 		"Akula" 				= 'icons/mob/species/akula/helmet_vr.dmi',
 		"Sergal"				= 'icons/mob/species/sergal/helmet_vr.dmi',
@@ -25,7 +24,6 @@
 		"Tajara" 			= 'icons/obj/clothing/species/tajaran/hats.dmi', // Copied from void.dm
 		"Skrell"			= 'icons/obj/clothing/species/skrell/hats.dmi',  // Copied from void.dm
 		"Unathi"			= 'icons/obj/clothing/species/unathi/hats.dmi',  // Copied from void.dm
-		"Teshari"			= 'icons/obj/clothing/species/seromi/hats.dmi',  // Copied from void.dm
 		"Nevrean"			= 'icons/obj/clothing/species/nevrean/hats.dmi',
 		"Akula"				= 'icons/obj/clothing/species/akula/hats.dmi',
 		"Sergal"			= 'icons/obj/clothing/species/sergal/hats.dmi',
@@ -41,7 +39,6 @@
 		"Tajara" 				= 'icons/mob/species/tajaran/suit.dmi',
 		"Skrell" 				= 'icons/mob/species/skrell/suit.dmi',
 		"Unathi" 				= 'icons/mob/species/unathi/suit.dmi',
-		"Teshari"				= 'icons/mob/species/seromi/suit.dmi',
 		"Nevrean" 				= 'icons/mob/species/nevrean/suit_vr.dmi',
 		"Akula" 				= 'icons/mob/species/akula/suit_vr.dmi',
 		"Sergal"				= 'icons/mob/species/sergal/suit_vr.dmi',
@@ -58,7 +55,6 @@
 		"Tajara"			= 'icons/obj/clothing/species/tajaran/suits.dmi', // Copied from void.dm
 		"Skrell"			= 'icons/obj/clothing/species/skrell/suits.dmi',  // Copied from void.dm
 		"Unathi"			= 'icons/obj/clothing/species/unathi/suits.dmi',  // Copied from void.dm
-		"Teshari"			= 'icons/obj/clothing/species/seromi/suits.dmi',  // Copied from void.dm
 		"Nevrean"			= 'icons/obj/clothing/species/nevrean/suits.dmi',
 		"Akula"				= 'icons/obj/clothing/species/akula/suits.dmi',
 		"Sergal"			= 'icons/obj/clothing/species/sergal/suits.dmi',
@@ -81,7 +77,6 @@
 		SPECIES_SKRELL,
 		SPECIES_UNATHI,
 		SPECIES_TAJ,
-		SPECIES_TESHARI,
 		SPECIES_AKULA,
 		SPECIES_ALRAUNE,
 		SPECIES_NEVREAN,
@@ -105,7 +100,6 @@
 		SPECIES_SKRELL,
 		SPECIES_UNATHI,
 		SPECIES_TAJ,
-		SPECIES_TESHARI,
 		SPECIES_AKULA,
 		SPECIES_ALRAUNE,
 		SPECIES_NEVREAN,

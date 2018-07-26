@@ -9,6 +9,3 @@
 	name = "pilot harness"
 	desc = "Sturdy mess of black synthcotton belts and buckles."
 	icon_state = "pilot_webbing2"
-	sprite_sheets = list(
-			"Teshari" = 'icons/mob/species/seromi/ties.dmi'
-			)

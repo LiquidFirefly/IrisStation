@@ -85,7 +85,6 @@
 	slot_flags = SLOT_MASK
 	body_parts_covered = FACE|EYES
 	sprite_sheets = list(
-		SPECIES_TESHARI		= 'icons/mob/species/seromi/masks_vr.dmi',
 		SPECIES_VOX 		= 'icons/mob/species/vox/masks.dmi',
 		SPECIES_TAJ 		= 'icons/mob/species/tajaran/mask_vr.dmi',
 		SPECIES_UNATHI 		= 'icons/mob/species/unathi/mask_vr.dmi',
@@ -105,7 +104,7 @@
 
 /obj/item/clothing/suit/equipped(var/mob/user, var/slot)
 	var/normalize = TRUE
-	
+
 	//Pyramid of doom-y. Improve somehow?
 	if(!taurized && slot == slot_wear_suit && ishuman(user))
 		var/mob/living/carbon/human/H = user

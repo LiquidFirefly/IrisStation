@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-
+/*
 /datum/species/xenochimera //Scree's race.
 	name = "Xenochimera"
 	name_plural = "Xenochimeras"
@@ -294,7 +294,7 @@
 /datum/species/xenochimera/get_race_key()
 	var/datum/species/real = all_species[base_species]
 	return real.race_key
-
+*/
 
 /////////////////////
 /////SPIDER RACE/////

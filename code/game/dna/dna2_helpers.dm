@@ -229,12 +229,6 @@
 			var/datum/species/custom/new_CS = CS.produceCopy(dna.base_species,dna.species_traits,src)
 			new_CS.blood_color = dna.blood_color
 
-		if(istype(H.species,/datum/species/xenochimera))
-			var/datum/species/xenochimera/CS = H.species
-			var/datum/species/xenochimera/new_CS = CS.produceCopy(dna.base_species,dna.species_traits,src)
-			new_CS.blood_color = dna.blood_color
-		// VOREStation Edit End
-
 		H.force_update_organs() //VOREStation Add - Gotta do this too
 		H.force_update_limbs()
 		//H.update_body(0) //VOREStation Edit - Done in force_update_limbs already

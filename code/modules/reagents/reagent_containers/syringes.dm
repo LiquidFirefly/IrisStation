@@ -159,7 +159,8 @@
 			if(!target.reagents.get_free_space())
 				to_chat(user, "<span class='notice'>[target] is full.</span>")
 				return
-
+			
+			var/mob/living/carbon/human/H = target
 			var/obj/item/organ/external/affected //VOREStation Edit - Moved this outside this if
 			if(istype(H))
 				affected = H.get_organ(user.zone_sel.selecting) //VOREStation Edit - See above comment.

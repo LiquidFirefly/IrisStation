@@ -305,7 +305,7 @@
 		return
 
 	close_up()
-
+/* Iris Edit
 /mob/living/silicon/pai/proc/choose_chassis()
 	set category = "pAI Commands"
 	set name = "Choose Chassis"
@@ -322,6 +322,7 @@
 
 	chassis = possible_chassis[choice]
 	verbs |= /mob/living/proc/hide
+*/
 
 /mob/living/silicon/pai/proc/choose_verbs()
 	set category = "pAI Commands"

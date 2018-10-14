@@ -20,14 +20,11 @@
 #   spellcheck (typo fixes)
 #   experiment
 #################################
-
-# Your name.  
+ # Your name.  
 author: N3X15
-
-# Optional: Remove this file after generating master changelog.  Useful for PR changelogs that won't get used again.
+ # Optional: Remove this file after generating master changelog.  Useful for PR changelogs that won't get used again.
 delete-after: True
-
-# Any changes you've made.  See valid prefix list above.
+ # Any changes you've made.  See valid prefix list above.
 # INDENT WITH TWO SPACES.  NOT TABS.  SPACES.
 # SCREW THIS UP AND IT WON'T WORK.
 # Also, all entries are changed into a single [] after a master changelog generation. Just remove the brackets when you add new entries.

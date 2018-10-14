@@ -26,7 +26,7 @@
 	var/chassis = "repairbot"   // A record of your chosen chassis.
 	var/global/list/possible_chassis = list(
 		"Drone" = "repairbot",
-		"Cat" = "cat",
+		/*"Cat" = "cat",
 		"Mouse" = "mouse",
 		"Monkey" = "monkey",
 		"Corgi" = "borgi",
@@ -41,8 +41,8 @@
 		"Natural" = list("says","yells","asks"),
 		"Beep" = list("beeps","beeps loudly","boops"),
 		"Chirp" = list("chirps","chirrups","cheeps"),
-		"Feline" = list("purrs","yowls","meows"),
-		"Canine" = list("yaps","barks","woofs")
+		/* "Feline" = list("purrs","yowls","meows"),
+		"Canine" = list("yaps","barks","woofs") */
 		)
 
 	var/obj/item/weapon/pai_cable/cable		// The cable we produce and use when door or camera jacking

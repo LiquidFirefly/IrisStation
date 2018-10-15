@@ -159,10 +159,11 @@
 			if(!target.reagents.get_free_space())
 				to_chat(user, "<span class='notice'>[target] is full.</span>")
 				return
-
+			
 			var/mob/living/carbon/human/H = target
+			var/obj/item/organ/external/affected //VOREStation Edit - Moved this outside this if
 			if(istype(H))
-				var/obj/item/organ/external/affected = H.get_organ(user.zone_sel.selecting)
+				affected = H.get_organ(user.zone_sel.selecting) //VOREStation Edit - See above comment.
 				if(!affected)
 					to_chat(user, "<span class='danger'>\The [H] is missing that limb!</span>")
 					return
@@ -215,13 +216,14 @@
 
 			if(trans)
 				to_chat(user, "<span class='notice'>You inject [trans] units of the solution. The syringe now contains [src.reagents.total_volume] units.</span>")
+			if(ismob(target))
 				add_attack_logs(user,target,"Injected with [src.name] containing [contained], trasferred [trans] units")
 			else
 				to_chat(user, "<span class='notice'>The syringe is empty.</span>")
 
 
 	return
-
+/* (Icon references is in the _vr)
 /obj/item/weapon/reagent_containers/syringe/update_icon()
 	overlays.Cut()
 
@@ -248,7 +250,7 @@
 
 		filling.color = reagents.get_color()
 		overlays += filling
-
+*/
 /obj/item/weapon/reagent_containers/syringe/proc/syringestab(mob/living/carbon/target as mob, mob/living/carbon/user as mob)
 	if(istype(target, /mob/living/carbon/human))
 

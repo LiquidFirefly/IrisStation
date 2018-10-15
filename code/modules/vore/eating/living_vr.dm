@@ -338,6 +338,18 @@
 			var/mob/living/simple_animal/SA = B.owner
 			SA.update_icons()
 
+	//You're in a dogborg!
+	else if(istype(loc, /obj/item/device/dogborg/sleeper))
+		var/mob/living/silicon/pred = loc.loc //Thing holding the belly!
+		var/obj/item/device/dogborg/sleeper/belly = loc //The belly!
+
+		var/confirm = alert(src, "You're in a dogborg sleeper. This is for escaping from preference-breaking or if your predator disconnects/AFKs. If your preferences were being broken, please admin-help as well.", "Confirmation", "Okay", "Cancel")
+		if(!confirm == "Okay" || loc != belly)
+			return
+		//Actual escaping
+		log_and_message_admins("[key_name(src)] used the OOC escape button to get out of [key_name(pred)] (BORG) ([pred ? "<a href='?_src_=holder;adminplayerobservecoodjump=1;X=[pred.x];Y=[pred.y];Z=[pred.z]'>JMP</a>" : "null"])")
+		belly.go_out(src) //Just force-ejects from the borg as if they'd clicked the eject button.
+
 	//You're in an AI hologram!
 	else if(istype(loc, /obj/effect/overlay/aiholo))
 		var/obj/effect/overlay/aiholo/holo = loc

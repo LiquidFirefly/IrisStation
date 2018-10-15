@@ -51,4 +51,4 @@
 			P.damage = round(energy_before_firing * 0.003) // .3% of their current energy pool.
 		adjust_instability(instability_per_shot)
 		return 1
-*/
+    

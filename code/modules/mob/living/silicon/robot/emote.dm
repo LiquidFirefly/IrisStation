@@ -219,6 +219,24 @@
 			playsound(src.loc, 'sound/machines/synth_no.ogg', 50, 0)
 			m_type = 1
 
+		if("law")
+			if (istype(module,/obj/item/weapon/robot_module/robot/security) || istype(module,/obj/item/weapon/robot_module/robot/knine)) //VOREStation Add - K9
+				message = "shows its legal authorization barcode."
+
+				playsound(src.loc, 'sound/voice/biamthelaw.ogg', 50, 0)
+				m_type = 2
+			else
+				src << "You are not THE LAW, pal."
+
+		if("halt")
+			if (istype(module,/obj/item/weapon/robot_module/robot/security) || istype(module,/obj/item/weapon/robot_module/robot/knine)) //VOREStation Add - K9
+				message = "<B>'s</B> speakers skreech, \"Halt! Security!\"."
+
+				playsound(src.loc, 'sound/voice/halt.ogg', 50, 0)
+				m_type = 2
+			else
+				src << "You are not security."
+
 		if ("help")
 			src << "salute, bow-(none)/mob, clap, flap, aflap, twitch, twitch_s, nod, deathgasp, glare-(none)/mob, stare-(none)/mob, look, beep, ping, \nbuzz, law, halt, yes, no"
 		else

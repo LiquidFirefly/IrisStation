@@ -118,4 +118,3 @@
 	for(var/cohesionsuit in (typesof(/obj/item/clothing/under/cohesion)))
 		var/obj/item/clothing/under/cohesion/cohesion_type = cohesionsuit
 		cohesionsuits[initial(cohesion_type.name)] = cohesion_type
-	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(cohesionsuits))

@@ -329,6 +329,23 @@
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED
 	min_age = 18
 
+/datum/species/teshari
+	mob_size = MOB_MEDIUM
+	spawn_flags = SPECIES_IS_RESTRICTED
+	icobase = 'icons/mob/human_races/r_seromi_vr.dmi'
+	deform = 'icons/mob/human_races/r_seromi_vr.dmi'
+	color_mult = 1
+	min_age = 18
+	push_flags = ~HEAVY //Allows them to use micro step code.
+	swap_flags = ~HEAVY
+
+	inherent_verbs = list(
+		/mob/living/carbon/human/proc/sonar_ping,
+		/mob/living/proc/hide,
+		/mob/living/proc/shred_limb,
+		/mob/living/proc/toggle_pass_table
+		)
+
 /datum/species/shapeshifter/promethean
 	spawn_flags = SPECIES_CAN_JOIN
 

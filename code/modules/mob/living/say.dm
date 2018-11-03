@@ -190,6 +190,9 @@ proc/get_radio_key_from_channel(var/channel)
 	//Clean up any remaining junk on the left like spaces.
 	message = trim_left(message)
 
+	//Autohiss handles auto-rolling tajaran R's and unathi S's/Z's
+	message = handle_autohiss(message, speaking)
+
 	//Whisper vars
 	var/w_scramble_range = 5	//The range at which you get ***as*th**wi****
 	var/w_adverb				//An adverb prepended to the verb in whispers

@@ -128,6 +128,8 @@
 	w_class = ITEMSIZE_TINY
 	throwforce = 2
 	slot_flags = SLOT_EARS
+	sprite_sheets = list(
+		SPECIES_TESHARI = 'icons/mob/species/seromi/ears.dmi')
 
 /obj/item/clothing/ears/attack_hand(mob/user as mob)
 	if (!user) return
@@ -208,6 +210,7 @@
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
 	sprite_sheets = list(
+		SPECIES_TESHARI = 'icons/mob/species/seromi/gloves.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/gloves.dmi'
 		)
 
@@ -324,6 +327,7 @@
 	var/image/helmet_light
 
 	sprite_sheets = list(
+		SPECIES_TESHARI = 'icons/mob/species/seromi/head.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/head.dmi'
 		)
 
@@ -427,6 +431,7 @@
 	body_parts_covered = FACE|EYES
 	blood_sprite_state = "maskblood"
 	sprite_sheets = list(
+		SPECIES_TESHARI = 'icons/mob/species/seromi/masks.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/masks.dmi',
 		SPECIES_TAJ = 'icons/mob/species/tajaran/mask.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/mask.dmi'
@@ -474,8 +479,9 @@
 	slowdown = SHOES_SLOWDOWN
 	force = 2
 	var/overshoes = 0
-	species_restricted = list("exclude", SPECIES_VOX)
+	species_restricted = list("exclude",SPECIES_TESHARI, SPECIES_VOX)
 	sprite_sheets = list(
+		SPECIES_TESHARI = 'icons/mob/species/seromi/shoes.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/shoes.dmi'
 		)
 
@@ -581,6 +587,7 @@
 
 
 	sprite_sheets = list(
+		SPECIES_TESHARI = 'icons/mob/species/seromi/suit.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/suit.dmi'
 		)
 
@@ -619,7 +626,8 @@
 	var/displays_id = 1
 	var/rolled_down = -1 //0 = unrolled, 1 = rolled, -1 = cannot be toggled
 	var/rolled_sleeves = -1 //0 = unrolled, 1 = rolled, -1 = cannot be toggled
-	sprite_sheets = list(,
+	sprite_sheets = list(
+		SPECIES_TESHARI = 'icons/mob/species/seromi/uniform.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/uniform.dmi'
 		)
 

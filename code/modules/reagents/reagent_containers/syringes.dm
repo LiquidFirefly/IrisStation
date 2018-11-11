@@ -159,7 +159,7 @@
 			if(!target.reagents.get_free_space())
 				to_chat(user, "<span class='notice'>[target] is full.</span>")
 				return
-			
+
 			var/mob/living/carbon/human/H = target
 			var/obj/item/organ/external/affected //VOREStation Edit - Moved this outside this if
 			if(istype(H))
@@ -203,27 +203,26 @@
 			var/contained = reagentlist()
 			while(reagents.total_volume)
 				if(ismob(target))
-					trans += reagents.trans_to_mob(target, amount_per_transfer_from_this, CHEM_BLOOD)
+					trans += reagents.trans_to_mob(target, amount_per_transfer_from_this, CHEM_BLOOD)	
 				else
 					trans += reagents.trans_to_obj(target, amount_per_transfer_from_this)
 				update_icon()
 				if(!reagents.total_volume || !do_after(user,cycle_time,target))
 					break
-
+			
 			if (reagents.total_volume <= 0 && mode == SYRINGE_INJECT)
 				mode = SYRINGE_DRAW
 				update_icon()
 
 			if(trans)
 				to_chat(user, "<span class='notice'>You inject [trans] units of the solution. The syringe now contains [src.reagents.total_volume] units.</span>")
-			if(ismob(target))
-				add_attack_logs(user,target,"Injected with [src.name] containing [contained], trasferred [trans] units")
+				if(ismob(target))
+					add_attack_logs(user,target,"Injected with [src.name] containing [contained], trasferred [trans] units")
 			else
 				to_chat(user, "<span class='notice'>The syringe is empty.</span>")
 
-
 	return
-/* (Icon references is in the _vr)
+/* VOREStation Edit - See syringes_vr.dm
 /obj/item/weapon/reagent_containers/syringe/update_icon()
 	overlays.Cut()
 

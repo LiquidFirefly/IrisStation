@@ -81,6 +81,7 @@
 		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right)
 		)
 
+/*
 /datum/species/shapeshifter/promethean/avatar/teshari
 	name = "Virtual Reality Teshari"
 	icobase = 'icons/mob/human_races/r_seromi.dmi'
@@ -99,6 +100,7 @@
 		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/seromi),
 		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/seromi)
 		)
+*/
 
 /datum/species/shapeshifter/promethean/avatar/diona
 	name = "Virtual Reality Diona"

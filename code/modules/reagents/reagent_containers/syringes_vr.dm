@@ -2,7 +2,7 @@
 
 /obj/item/weapon/reagent_containers/syringe
 	icon = 'icons/goonstation/objects/syringe_vr.dmi'
-	mode = SYRINGE_DRAW //Override, Removes caps.
+	mode = SYRINGE_DRAW //Override
 	var/used = FALSE
 	var/dirtiness = 0
 	var/list/targets

@@ -19,6 +19,7 @@
 	containertype = /obj/structure/closet/crate
 	containername = "Xenowear crate"
 
+/*
 /datum/supply_packs/costumes/tesh_smocks_vr
 	name = "Teshari smocks"
 	contains = list(
@@ -117,6 +118,8 @@
 	cost = 40
 	containertype = /obj/structure/closet/crate
 	containername = "Teshari cloaks crate"
+
+*/
 
 /datum/supply_packs/costumes/utility_vr
 	name = "Utility uniforms"

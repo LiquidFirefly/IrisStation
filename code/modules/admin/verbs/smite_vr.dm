@@ -19,13 +19,14 @@
 
 	switch(smite_choice)
 		if(SMITE_SHADEKIN_ATTACK)
-			var/turf/Tt = get_turf(target) //Turf for target
-			
+			src << "This type of smite is disabled."
+/*			var/turf/Tt = get_turf(target) //Turf for target
+
 			if(target.loc != Tt)
 				return //Too hard to attack someone in something
-			
+
 			var/turf/Ts //Turf for shadekin
-			
+
 			//Try to find nondense turf
 			for(var/direction in cardinal)
 				var/turf/T = get_step(target,direction)
@@ -48,9 +49,12 @@
 			spawn(10 SECONDS)
 				if(shadekin)
 					shadekin.death()
+*/
+
 
 		if(SMITE_SHADEKIN_NOMF)
-			var/list/kin_types = list(
+			src << "This type of smite is disabled."
+/*			var/list/kin_types = list(
 				"Red Eyes (Dark)" =	/mob/living/simple_animal/shadekin/red/dark,
 				"Red Eyes (Light)" = /mob/living/simple_animal/shadekin/red/white,
 				"Red Eyes (Brown)" = /mob/living/simple_animal/shadekin/red/brown,
@@ -81,7 +85,7 @@
 				return
 
 			var/turf/Tt = get_turf(target)
-			
+
 			if(target.loc != Tt)
 				return //Can't nom when not exposed
 
@@ -117,6 +121,7 @@
 				target.ghostize()
 				qdel(target)
 				qdel(shadekin)
+*/
 
 		if(SMITE_REDSPACE_ABDUCT)
 			redspace_abduction(target, src)
@@ -160,7 +165,7 @@ var/redspace_abduction_z
 	//Lower left corner of a working box
 	var/llc_x = max(0,halfbox-target.x) + min(target.x+halfbox, world.maxx) - size_of_square
 	var/llc_y = max(0,halfbox-target.y) + min(target.y+halfbox, world.maxy) - size_of_square
-	
+
 	//Copy them all
 	for(var/x = llc_x to llc_x+size_of_square)
 		for(var/y = llc_y to llc_y+size_of_square)
@@ -196,7 +201,7 @@ var/redspace_abduction_z
 				T.density = FALSE
 				T.opacity = FALSE
 				T.vis_contents.Cut()
-	
+
 	for(var/x = llc_x to llc_x+size_of_square) //Bottom
 		for(var/y = llc_y to llc_y+1)
 			if(prob(50))
